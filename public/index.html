@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <title>Ionic App</title>
+
+    <base href="./" />
+
+    <meta
+      name="viewport"
+      content="viewport-fit=cover, width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no"
+    />
+    <meta name="format-detection" content="telephone=no" />
+    <meta name="msapplication-tap-highlight" content="no" />
+
+    <link rel="manifest" href="./manifest.json" />
+
+    <link rel="shortcut icon" type="image/png" href="./assets/icon/favicon.png" />
+
+    <!-- add to home screen for ios -->
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-title" content="Ionic App" />
+    <meta name="apple-mobile-web-app-status-bar-style" content="black" />
+    <link rel="stylesheet" href="./assets/theme/index.css" />
+  </head>
+
+  <body>
+    <div id="root"></div>
+    <script src="../node_modules/react/umd/react.production.min.js"></script>
+    <script src="../node_modules/react-dom/umd/react-dom.production.min.js"></script>
+    <script src="../node_modules/react-router/umd/react-router.min.js"></script>
+    <script src="../node_modules/react-router-dom/umd/react-router-dom.min.js"></script>
+    <script type="importmap">
+      {
+        "imports": {
+          "tslib": "../node_modules/tslib/tslib.es6.js",
+          "react": "../vendor/react.js",
+          "react-dom": "../vendor/react-dom.js",
+          "react-router":"../vendor/react-router.js",
+          "react-router-dom": "../vendor/react-router.js",
+          "ionicons/icons": "../vendor/ionicons.js",
+          "ionicons": "../node_modules/ionicons/dist/index.mjs",
+          "@ionic/react": "../node_modules/@ionic/react/dist/index.esm.js",
+          "@ionic/react-core": "../node_modules/@ionic/react-core/dist/index.esm.js",
+          "@ionic/core": "../node_modules/@ionic/core/dist/index.mjs",
+          "@ionic/core/loader": "../node_modules/@ionic/core/loader/index.es2017.mjs",
+          "@ionic/react-router": "../node_modules/@ionic/react-router/dist/index.esm.js"
+        }
+      }
+    </script>
+    <script>var process = { env: { NODE_ENV: 'development', PUBLIC_URL: '' } };</script>
+    <script type="module" src="../src/index.js"></script>
+  </body>
+
+</html>
